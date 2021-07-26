@@ -4,6 +4,10 @@
     --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
+body {
+    max-width: 100%;
+}
+
 h1,
 h3 {
     text-align: center;
@@ -13,6 +17,8 @@ h3 {
 h1 {
     font-size: 96px;
 }
+
+
 
 h2 {
     font-size: 48px;
@@ -49,6 +55,10 @@ p {
     color: white;
 }
 
+.primary-link:hover,.secondary-link:hover {
+    color:indigo;
+}
+
 .secondary-link {
     border-radius: 4px;
     padding: 20px 15px;
@@ -79,4 +89,28 @@ p {
 
 .about-img {
     box-shadow: var(--box-shadow);
+}
+
+@media (max-width: 750px) {
+    h1 {
+        font-size: 56px;
+        line-height: 1.5;
+    }
+
+    h2 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
+    .small-screen-button {
+        display: block;
+        text-align: center;
+    }
+
+    .col-sm-6 {
+        margin-bottom: 30px;
+    }
 }
